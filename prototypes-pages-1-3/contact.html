@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moffat Bay Lodge - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Moffat Bay Lodge</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="index.html#accommodations">Accommodations</a>
+        <a href="index.html#activities">Activities</a>
+    </nav>
+</header>
+
+<main>
+    <section id="contact-section">
+        <h2>Contact Us</h2>
+
+        <p>
+            Have questions about Moffat Bay Lodge?
+            Fill out the form below to contact us.
+        </p>
+
+        <form id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Address placeholder</p>
+        <p>Phone and email placeholder</p>
+    </div>
+
+    <div class="quick-links">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="social-media">
+        <h3>Social Media</h3>
+        <p>Social media links placeholder</p>
+    </div>
+
+    <p>&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Thank you for contacting Moffat Bay Lodge! Your message has been received.");
+
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
