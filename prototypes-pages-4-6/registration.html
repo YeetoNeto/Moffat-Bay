@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moffat Bay Lodge - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Moffat Bay Lodge</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="index.html#accommodations">Accommodations</a>
+            <a href="attractions.html">Attractions</a>
+            <a href="registration.html" aria-current="page">Register</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registration-section">
+            <h2>Create an Account</h2>
+            <p>Register with Moffat Bay Lodge to get ready to make a reservation.</p>
+            <form id="registration-form">
+                <label for="first-name">First Name:</label>
+                <input id="first-name" name="firstName" type="text" autocomplete="given-name" required maxlength="60">
+
+                <label for="last-name">Last Name:</label>
+                <input id="last-name" name="lastName" type="text" autocomplete="family-name" required maxlength="60">
+
+                <label for="email">Email Address:</label>
+                <input id="email" name="email" type="email" autocomplete="email" required maxlength="254">
+
+                <label for="telephone">Telephone Number:</label>
+                <input id="telephone" name="telephone" type="tel" autocomplete="tel" required maxlength="30">
+
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password" autocomplete="new-password" required minlength="8" aria-describedby="password-help">
+                <p id="password-help" class="form-hint">Use at least 8 characters, including an uppercase letter, a lowercase letter, and a number.</p>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" required>
+
+                <p id="registration-message" role="status" aria-live="polite"></p>
+                <button type="submit">Create Account</button>
+            </form>
+            <p class="form-footer">Already have an account? <a href="login.html">Log In</a></p>
+            <p class="prototype-note">Prototype only: this form demonstrates validation but does not create or save an account.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Address placeholder</p>
+            <p>Phone and email placeholder</p>
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="attractions.html">Attractions</a>
+        </div>
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <p>Social media links placeholder</p>
+        </div>
+        <p>&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
+    </footer>
+    <script>
+// Prototype only: no account information is stored or sent to a server.
+document.getElementById('registration-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const password = document.getElementById('password').value;
+    const confirm = document.getElementById('confirm-password').value;
+    const message = document.getElementById('registration-message');
+    message.className = 'error';
+
+    if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/.test(password)) {
+        message.textContent = 'Password must be at least 8 characters and include uppercase, lowercase, and a number.';
+        return;
+    }
+    if (password !== confirm) {
+        message.textContent = 'Passwords do not match. Please try again.';
+        return;
+    }
+    message.className = 'success';
+    message.textContent = 'Registration form validated successfully! This is a prototype; no account was created.';
+    this.reset();
+});
+
+    </script>
+</body>
+</html>

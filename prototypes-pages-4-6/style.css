@@ -1,0 +1,319 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #e8e8e8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+#hero {
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+}
+
+#hero a {
+    display: inline-block;
+    background-color: #555555;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#hero a:hover {
+    background-color: #333333;
+}
+
+
+#accommodations {
+    text-align: center;
+}
+
+.room {
+    display: inline-block;
+    background-color: #e8e8e8;
+    width: 40%;
+    padding: 20px;
+    margin: 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+    min-height: 200px;
+}
+
+.room a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+#activities {
+    text-align: center;
+}
+
+.activity {
+    display: inline-block;
+    background-color: #e8e8e8;
+    width: 28%;
+    min-height: 180px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+
+#about-location {
+    text-align: center;
+}
+
+.location, .about {
+    display: inline-block;
+    background-color: #e8e8e8;
+    width: 40%;
+    min-height: 180px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+
+footer {
+    background-color: #e8e8e8;
+    padding: 20px;
+    text-align: center;
+}
+
+footer div {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: left;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+#about-intro,
+#our-story,
+#amenities {
+    background-color: #e8e8e8;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 5px;
+}
+
+#about-intro p,
+#our-story p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+#amenities ul {
+    max-width: 400px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+#about-page-location {
+        background-color: #e8e8e8;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+
+#contact-section {
+    background-color: #e8e8e8;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#contact-section p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#contact-form button {
+    background-color: #555555;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#contact-form button:hover {
+    background-color: #333333;
+}
+
+/* Attractions page */
+/* Additional styling for the Attractions prototype. Shared styles are in style.css. */
+header { flex-wrap: wrap; gap: 12px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; }
+nav a { margin-left: 0; }
+nav a[aria-current="page"] { text-decoration: underline; font-weight: bold; }
+#attractions-intro, #attractions-next-step { background: #e8e8e8; border-radius: 5px; max-width: 1000px; margin: 20px auto; text-align: center; }
+#attractions-intro p, #attractions-next-step p { line-height: 1.6; }
+#attractions-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 1040px; margin: 0 auto; }
+.attraction-card { background: #e8e8e8; border-radius: 5px; padding: 20px; }
+.attraction-card h3 { text-align: center; }
+.attraction-card p { line-height: 1.6; }
+.image-placeholder { background: #d0d0d0; border: 2px dashed #999; min-height: 150px; display: flex; justify-content: center; align-items: center; color: #444; text-align: center; padding: 12px; box-sizing: border-box; }
+.attraction-button { display: inline-block; margin: 8px; padding: 12px 20px; background: #555; color: white; text-decoration: none; border-radius: 5px; }
+.attraction-button:hover { background: #333; }
+@media (max-width: 650px) { #attractions-list { grid-template-columns: 1fr; } footer div { display: block; width: 100%; margin-bottom: 15px; } }
+
+
+/* Registration page */
+#registration-section {
+    background-color: #e8e8e8;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#registration-section > p { text-align: center; }
+#registration-form { display: flex; flex-direction: column; gap: 10px; }
+#registration-form label { font-weight: bold; }
+#registration-form input {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font: 16px Arial, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+#registration-form input:focus { outline: 2px solid #555; outline-offset: 1px; }
+#registration-form button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+#registration-form button:hover { background-color: #333; }
+.form-hint { margin: 0 0 4px; color: #444; font-size: 14px; }
+#registration-message { margin: 5px 0; font-weight: bold; }
+#registration-message.error { color: #8a1616; }
+#registration-message.success { color: #215d31; }
+.form-footer { margin-top: 20px; }
+.prototype-note { color: #555; font-size: 13px; }
+@media (max-width: 600px) {
+    #registration-section { padding: 20px; }
+    header { flex-wrap: wrap; gap: 12px; }
+    nav a { display: inline-block; margin: 4px 8px 4px 0; }
+}
+
+
+/* Login page */
+#login-section {
+    background-color: #e8e8e8;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#login-section > p { text-align: center; }
+#login-form { display: flex; flex-direction: column; gap: 10px; }
+#login-form label { font-weight: bold; }
+#login-form input {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font: 16px Arial, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+#login-form input:focus { outline: 2px solid #555; outline-offset: 1px; }
+#login-form button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+#login-form button:hover { background-color: #333; }
+#login-message { margin: 5px 0; font-weight: bold; }
+#login-message.error { color: #8a1616; }
+#login-message.success { color: #215d31; }
+.login-footer { margin-top: 20px; }
+.login-note { color: #555; font-size: 13px; }
+@media (max-width: 600px) {
+    #login-section { padding: 20px; }
+    header { flex-wrap: wrap; gap: 12px; }
+    nav a { display: inline-block; margin: 4px 8px 4px 0; }
+}
