@@ -10,46 +10,44 @@
     <header>
         <h1>Moffat Bay Lodge</h1>
 
-        <nav>
+         <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
             <a href="index.html#accommodations">Accommodations</a>
-            <a href="attractions.html" aria-current="page">Attractions</a>
-            <a href="reservations.html">My Reservations</a>
+            <a href="attractions.html" >Attractions</a>
+            <a href="reservations.html" aria-current="page">My Reservations</a>
             <a href="registration.html">Register</a>
             <a href="login.html">Login</a>
         </nav>
     </header>
-
     <main>
-        <section id="accommodations">
-            <h2>Reservations</h2>
-
-            <div class="room">
-                <h3>Reservation Dates</h3>
-                <p>Reservation Room image placeholder</p>
+        <h2>Reservations</h2>
+        <section id="attractions-list" aria-label="Available activities">
+            <article class="attraction-card" id="hiking">
+                <div class="image-placeholder" role="img">Reservation image placeholder</div>
+               <h3>Reservation Dates</h3>
                 <p>Reservation Summary placeholder</p>
-                <a href="reservationSummary.html">View Reservation Summary</a>
-            </div>
-            <div class="room">
+                <p id="accommodations"><a href="reservationSummary.html">View Reservation Summary</a></p>
+            </article>
+            <article class="attraction-card" id="kayaking">
+                <div class="image-placeholder" role="img">Reservation image placeholder</div>
                 <h3>Reservation Dates</h3>
-                <p>Reservation Room image placeholder</p>
                 <p>Reservation Summary placeholder</p>
-                <a href="reservationSummary.html">View Reservation Summary</a>
-            </div>
-            <div class="room">
+                <p id="accommodations"><a href="reservationSummary.html">View Reservation Summary</a></p>
+            </article>
+            <article class="attraction-card" id="whale-watching">
+                <div class="image-placeholder" role="img" >Reservation watching image placeholder</div>
                 <h3>Reservation Dates</h3>
-                <p>Reservation Room image placeholder</p>
                 <p>Reservation Summary placeholder</p>
-                <a href="reservationSummary.html">View Reservation Summary</a>
-            </div>
-            <div class="room">
+                <p id="accommodations"><a href="reservationSummary.html">View Reservation Summary</a></p>
+            </article>
+            <article class="attraction-card" id="scuba-diving">
+                <div class="image-placeholder" role="img" >Reservation diving image placeholder</div>
                 <h3>Reservation Dates</h3>
-                <p>Reservation Room image placeholder</p>
                 <p>Reservation Summary placeholder</p>
-                <a href="reservationSummary.html">View Reservation Summary</a>
-            </div>
+                <p id="accommodations"><a href="reservationSummary.html">View Reservation Summary</a></p>
+            </article>
         </section>
     </main>
 
@@ -65,6 +63,7 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="contact.html">Contact Us</a>
+            <a href="attractions.html">Attractions</a>
         </div>
 
         <div class="social-media">
