@@ -1,0 +1,213 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #e8e8e8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+#hero {
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+}
+
+#hero a {
+    display: inline-block;
+    background-color: #555555;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#hero a:hover {
+    background-color: #333333;
+}
+
+
+#accommodations {
+    text-align: center;
+}
+
+.room {
+    display: inline-block;
+    background-color: #e8e8e8;
+    width: 40%;
+    padding: 20px;
+    margin: 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+    min-height: 200px;
+}
+
+.room a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+#activities {
+    text-align: center;
+}
+
+.activity {
+    display: inline-block;
+    background-color: #e8e8e8;
+    width: 28%;
+    min-height: 180px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+
+#about-location {
+    text-align: center;
+}
+
+.location, .about {
+    display: inline-block;
+    background-color: #e8e8e8;
+    width: 40%;
+    min-height: 180px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+
+footer {
+    background-color: #e8e8e8;
+    padding: 20px;
+    text-align: center;
+}
+
+footer div {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: left;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+#about-intro,
+#our-story,
+#amenities {
+    background-color: #e8e8e8;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 5px;
+}
+
+#about-intro p,
+#our-story p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+#amenities ul {
+    max-width: 400px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+#about-page-location {
+        background-color: #e8e8e8;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+
+#contact-section {
+    background-color: #e8e8e8;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#contact-section p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#contact-form button {
+    background-color: #555555;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#contact-form button:hover {
+    background-color: #333333;
+}

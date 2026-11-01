@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moffat Bay Lodge- Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Moffat Bay Lodge</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="index.html#accommodations">Accommodations</a>
+            <a href="attractions.html" aria-current="page">Attractions</a>
+            <a href="reservations.html">My Reservations</a>
+            <a href="registration.html">Register</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="reservation">
+            <h2>Reservation Information</h2>
+            <form action="reservationSummary.html" method="GET">
+            <label for="firstName">First Name: </label>
+            <input type="text" id="firstName">
+            <br><br>
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName">
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="text" id="email">
+            <br><br>
+            <label for="guests">Number of Guests:</label>
+            <select id="guests">
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+            </select>
+
+            <br><br>
+            <label for="rooms">Reservation Room</label>
+            <select id="rooms">
+                <option value="1">Room 1</option>
+                <option value="2">Room 2</option>
+            </select>
+            <br><br>
+            <label for="date">Reservation Check In Date:</label>
+            <input type="date" id="date">
+            <br><br>
+            <label for="date">Reservation Check out Date:</label>
+            <input type="date" id="date">
+            <br><br>
+            <label for="requests">Special Requests:</label>
+            <br>
+            <textarea id="requests" placeholder="Any special requests?" rows="4" cols="40"></textarea>
+            <br><br>
+            <h2>Payment Information</h2>
+
+            <label for="cardName">Name on Card:</label>
+            <input type="text" id="cardName">
+            <br><br>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" maxlength="19">
+            <br><br>
+            <label for="expiration">Expiration Date:</label>
+            <input type="text" id="expiration" maxlength="5">
+            <br><br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" maxlength="3">
+            <br><br>
+            <button type="submit"> Submit Reservation</button>
+            </form>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Address placeholder</p>
+            <p>Phone and email placeholder</p>
+        </div>
+
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <p>Social media links placeholder</p>
+        </div>
+
+        <p>&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
