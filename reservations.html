@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moffat Bay Lodge- Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Moffat Bay Lodge</h1>
+
+         <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="index.html#accommodations">Accommodations</a>
+            <a href="attractions.html" >Attractions</a>
+            <a href="reservations.html" aria-current="page">My Reservations</a>
+            <a href="registration.html">Register</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Reservations</h2>
+        <section id="attractions-list" aria-label="Available activities">
+            <article class="attraction-card" id="hiking">
+                <div class="image-placeholder" role="img">Reservation image placeholder</div>
+               <h3>Reservation Dates</h3>
+                <p>Reservation Summary placeholder</p>
+                <p id="accommodations"><a href="reservationSummary.html">View Reservation Summary</a></p>
+            </article>
+            <article class="attraction-card" id="kayaking">
+                <div class="image-placeholder" role="img">Reservation image placeholder</div>
+                <h3>Reservation Dates</h3>
+                <p>Reservation Summary placeholder</p>
+                <p id="accommodations"><a href="reservationSummary.html">View Reservation Summary</a></p>
+            </article>
+            <article class="attraction-card" id="whale-watching">
+                <div class="image-placeholder" role="img" >Reservation image placeholder</div>
+                <h3>Reservation Dates</h3>
+                <p>Reservation Summary placeholder</p>
+                <p id="accommodations"><a href="reservationSummary.html">View Reservation Summary</a></p>
+            </article>
+            <article class="attraction-card" id="scuba-diving">
+                <div class="image-placeholder" role="img" >Reservation image placeholder</div>
+                <h3>Reservation Dates</h3>
+                <p>Reservation Summary placeholder</p>
+                <p id="accommodations"><a href="reservationSummary.html">View Reservation Summary</a></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Address placeholder</p>
+            <p>Phone and email placeholder</p>
+        </div>
+
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="attractions.html">Attractions</a>
+        </div>
+
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <p>Social media links placeholder</p>
+        </div>
+
+        <p>&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
