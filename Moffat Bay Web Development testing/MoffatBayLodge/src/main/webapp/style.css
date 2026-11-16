@@ -225,3 +225,46 @@ footer a:hover {
 #contact-information p {
     margin-bottom: 15px;
 }
+
+/* Login page */
+#login-section {
+    background-color: #e8e8e8;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#login-section > p { text-align: center; }
+#login-form { display: flex; flex-direction: column; gap: 10px; }
+#login-form label { font-weight: bold; }
+#login-form input {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font: 16px Arial, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+#login-form input:focus { outline: 2px solid #555; outline-offset: 1px; }
+#login-form button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+#login-form button:hover { background-color: #333; }
+#login-message { margin: 5px 0; font-weight: bold; }
+#login-message.error { color: #8a1616; }
+#login-message.success { color: #215d31; }
+.login-footer { margin-top: 20px; }
+.login-note { color: #555; font-size: 13px; }
+@media (max-width: 600px) {
+    #login-section { padding: 20px; }
+    header { flex-wrap: wrap; gap: 12px; }
+    nav a { display: inline-block; margin: 4px 8px 4px 0; }
+}
