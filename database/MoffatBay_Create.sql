@@ -42,6 +42,7 @@ CREATE TABLE Room_Types (
 
 -- Reservations table
 CREATE TABLE Reservations (
+    special_requests VARCHAR(500) NULL
     reservation_id INT PRIMARY KEY AUTO_INCREMENT,
     account_id INT,
     room_type_id INT,
