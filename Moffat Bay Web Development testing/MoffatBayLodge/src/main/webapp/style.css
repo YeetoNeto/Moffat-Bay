@@ -3,21 +3,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #F3F3F4;
 }
 
 header {
-    background-color: #e8e8e8;
+    background-color: #34312D;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color : #D9C5B2;
 }
 
 nav a {
     margin-left: 15px;
     text-decoration: none;
-    color: black;
+    color: #F3F3F4;
 }
 
 main {
@@ -35,7 +36,8 @@ h2 {
 
 
 #hero {
-    background-color: #e8e8e8;
+    background-color: #34312D;
+    color: #F3F3F4;
     text-align: center;
     padding: 60px 20px;
     margin-bottom: 30px;
@@ -43,8 +45,8 @@ h2 {
 
 #hero a {
     display: inline-block;
-    background-color: #555555;
-    color: white;
+    background-color: #D9C5B2;
+    color: #14110F;
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
@@ -52,17 +54,20 @@ h2 {
 }
 
 #hero a:hover {
-    background-color: #333333;
+    background-color: #7E7F83;
+    color: #F3F3F4;
 }
 
 
 #accommodations {
     text-align: center;
+    color: #14110F;
 }
 
 .room {
     display: inline-block;
-    background-color: #e8e8e8;
+    background-color: #D9C5B2;
+    color: #14110F;
     width: 40%;
     padding: 20px;
     margin: 10px;
@@ -72,18 +77,74 @@ h2 {
 }
 
 .room a {
+    color: #34312D;
     display: inline-block;
     margin-top: 10px;
 }
 
+.reservation{
+   background-color: #34312D;
+    color: #D9C5B2;
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin: 30px auto;
+}
+
+.reservation h2{
+    color: #F3F3F4;
+}
+
+.reservation textarea::placeholder{
+    color:#7E7F83;
+}
+
+.reservation button {
+    background-color: #7E7F83;
+    color: #F3F3F4;
+}
+
+.reservation button:hover{
+    background-color: #D9C5B2; 
+    color: #14110F;
+}
+
+.reservation-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.reservation-box label {
+    color:#7E7F83;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.reservation-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #D9C5B2;
+    color: #14110F;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 #activities {
     text-align: center;
+    color: #14110F;
 }
+
 
 .activity {
     display: inline-block;
-    background-color: #e8e8e8;
+    background-color: #D9C5B2;
+    color: #14110F;
     width: 28%;
     min-height: 180px;
     padding: 20px;
@@ -95,11 +156,13 @@ h2 {
 
 #about-location {
     text-align: center;
+    color: #14110F;
 }
 
 .location, .about {
     display: inline-block;
-    background-color: #e8e8e8;
+    background-color: #D9C5B2;
+    color: #14110F;
     width: 40%;
     min-height: 180px;
     padding: 20px;
@@ -108,9 +171,13 @@ h2 {
     vertical-align: top;
 }
 
+.about a{
+    color: #34312D;
+}
 
 footer {
-    background-color: #e8e8e8;
+    background-color: #14110F;
+    color: #F3F3F4;
     padding: 20px;
     text-align: center;
 }
@@ -121,11 +188,18 @@ footer div {
     vertical-align: top;
     text-align: left;
 }
+footer p {
+    color: #D9C5B2;
+}
+
+.copyright{
+    color: #F3F3F4;
+}
 
 footer a {
     display: block;
     margin-bottom: 8px;
-    color: black;
+    color: #D9C5B2;
     text-decoration: none;
 }
 
@@ -137,11 +211,17 @@ footer a:hover {
 #about-intro,
 #our-story,
 #amenities {
-    background-color: #e8e8e8;
+    background-color: #D9C5B2;
+    color: #14110F;
     padding: 30px;
     margin: 20px auto;
     max-width: 1000px;
     border-radius: 5px;
+}
+
+#about-intro{
+    background-color: #34312D;
+    color: #F3F3F4;
 }
 
 #about-intro p,
@@ -157,7 +237,8 @@ footer a:hover {
 }
 
 #about-page-location {
-        background-color: #e8e8e8;
+        background-color: #34312D;
+        color: #F3F3F4;
         max-width: 1000px;
         margin: 20px auto;
         padding: 30px;
@@ -167,7 +248,8 @@ footer a:hover {
 
 
 #contact-section {
-    background-color: #e8e8e8;
+    background-color: #D9C5B2;
+    color: #14110F;
     max-width: 700px;
     margin: 30px auto;
     padding: 30px;
@@ -199,7 +281,7 @@ footer a:hover {
 }
 
 #contact-form button {
-    background-color: #555555;
+    background-color: #7E7F83;
     color: white;
     padding: 12px;
     border: none;
@@ -212,32 +294,86 @@ footer a:hover {
     background-color: #333333;
 }
 
+/* Attractions page */
+/* Additional styling for the Attractions prototype. Shared styles are in style.css. */
+header { flex-wrap: wrap; gap: 12px; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; }
+nav a { margin-left: 0; }
+nav a[aria-current="page"] { text-decoration: underline; font-weight: bold; }
+#attractions-intro, #attractions-next-step { background-color: #34312D; color: #F3F3F4; border-radius: 5px; max-width: 1000px; margin: 20px auto; text-align: center; }
+#attractions-intro p, #attractions-next-step p { line-height: 1.6; }
+#attractions-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 1040px; margin: 0 auto; }
+.attraction-card { background-color: #D9C5B2; color: #14110F; border-radius: 5px; padding: 20px; }
+.attraction-card h3 { text-align: center; }
+.attraction-card a {color: #34312D;}
+.attraction-card p { line-height: 1.6; }
+.image-placeholder { background: #7E7F83; border: 2px dashed #999; min-height: 150px; display: flex; justify-content: center; align-items: center; color: #F3F3F4; text-align: center; padding: 12px; box-sizing: border-box; }
+.attraction-button { display: inline-block; margin: 8px; padding: 12px 20px; background-color: #D9C5B2; color: #14110F; text-decoration: none; border-radius: 5px; }
+.attraction-button:hover { background-color: #7E7F83; color: #F3F3F4; }
+@media (max-width: 650px) { #attractions-list { grid-template-columns: 1fr; } footer div { display: block; width: 100%; margin-bottom: 15px; } }
 
-#contact-information {
-    background-color: #e8e8e8;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 30px;
-    border-radius: 5px;
-    text-align: center;
-}
 
-#contact-information p {
-    margin-bottom: 15px;
-}
-
-/* Login page */
-#login-section {
-    background-color: #e8e8e8;
+/* Registration page */
+#registration-section {
+    background-color: #34312D;
+    color: #F3F3F4;
     max-width: 650px;
     margin: 30px auto;
     padding: 30px;
     border-radius: 5px;
     box-sizing: border-box;
 }
+#registration-section > p { text-align: center; }
+#registration-form { display: flex; flex-direction: column; gap: 10px; }
+#registration-form label { color:#D9C5B2; font-weight: bold; }
+#registration-form input {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font: 16px Arial, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+#registration-form input:focus { outline: 2px solid #7E7F83; outline-offset: 1px; }
+#registration-form button {
+    background-color:#7E7F83;
+    color: #F3F3F4;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+#registration-form button:hover { background-color: #D9C5B2; color: #14110F; }
+#registration-section a{ color:#D9C5B2;}
+.form-hint { margin: 0 0 4px; color: #7E7F83; font-size: 14px; }
+#registration-message { margin: 5px 0; font-weight: bold; }
+#registration-message.error { color: #8a1616; }
+#registration-message.success { color: #215d31; }
+.form-footer { margin-top: 20px; }
+.prototype-note { color:#7E7F83; font-size: 13px; }
+@media (max-width: 600px) {
+    #registration-section { padding: 20px; }
+    header { flex-wrap: wrap; gap: 12px; }
+    nav a { display: inline-block; margin: 4px 8px 4px 0; }
+}
+
+
+/* Login page */
+#login-section {
+    background-color: #34312D;
+    color: #F3F3F4;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#login-section a{ color:#D9C5B2;}
 #login-section > p { text-align: center; }
 #login-form { display: flex; flex-direction: column; gap: 10px; }
-#login-form label { font-weight: bold; }
+#login-form label { color:#D9C5B2; font-weight: bold; }
 #login-form input {
     padding: 10px;
     border: 1px solid #999;
@@ -248,8 +384,8 @@ footer a:hover {
 }
 #login-form input:focus { outline: 2px solid #555; outline-offset: 1px; }
 #login-form button {
-    background-color: #555;
-    color: white;
+    background-color: #7E7F83;
+    color: #F3F3F4;
     border: none;
     border-radius: 5px;
     padding: 12px;
@@ -257,12 +393,12 @@ footer a:hover {
     cursor: pointer;
     margin-top: 6px;
 }
-#login-form button:hover { background-color: #333; }
+#login-form button:hover { background-color: #D9C5B2; color: #14110F; }
 #login-message { margin: 5px 0; font-weight: bold; }
 #login-message.error { color: #8a1616; }
 #login-message.success { color: #215d31; }
 .login-footer { margin-top: 20px; }
-.login-note { color: #555; font-size: 13px; }
+.login-note { color:#7E7F83; font-size: 13px; }
 @media (max-width: 600px) {
     #login-section { padding: 20px; }
     header { flex-wrap: wrap; gap: 12px; }

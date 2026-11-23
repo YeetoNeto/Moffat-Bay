@@ -29,7 +29,7 @@
 
         <nav>
             <a href="index.jsp">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="about.jsp">About Us</a>
             <a href="#accommodations">Accommodations</a>
             <a href="#activities">Activities</a>
         </nav>
@@ -45,7 +45,7 @@
                 Experience a relaxing getaway at Moffat Bay Lodge.
             </p>
 
-            <a href="reservation.html">Book Now</a>
+            <a href="reservation.jsp">Book Now</a>
         </section>
 		
 		<section id="accommodations">
@@ -72,7 +72,7 @@
             <div class="activity">
                 <h3>Activity 1</h3>
                 <p>Activity image placeholder</p>
-                <p>Acitivty description placeholder</p>
+                <p>Activity description placeholder</p>
             </div>
 
             <div class="activity">
@@ -123,7 +123,7 @@
             <p>Social media links placeholder</p>
         </div>
 
-        <p>&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
+        <p class="copyright">&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
     </footer>
 
 </body>

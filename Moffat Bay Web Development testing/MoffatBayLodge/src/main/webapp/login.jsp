@@ -12,16 +12,24 @@ int count = 0;
         String username = request.getParameter("email");
         String password = request.getParameter("password");
 
-        String result = database.getLogin(username, password);
+        Integer result = database.getLogin(username, password);
 
-        if (result.equalsIgnoreCase("Login successful")){
+        if (result >= 0){
+        	session = request.getSession();
+        	// Regenerate the session ID
+        	request.changeSessionId();
+         	// Store user information
+        	session.setAttribute("accountId", result);
+        	session.setAttribute("loggedIn", true);
+        	// Set 30-minute inactivity timeout
+        	session.setMaxInactiveInterval(30 * 60);
         	response.sendRedirect("reservations.jsp");
         }
         else{
         	showMessage = true;
         	count = count + 1;
         	if (count == 3){
-        		//lockout user
+        		//lockout user, need to update database further to work with this
         	}
         }
     }
@@ -38,11 +46,11 @@ int count = 0;
     <header>
         <h1>Moffat Bay Lodge</h1>
         <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="index.html#accommodations">Accommodations</a>
-            <a href="attractions.html">Attractions</a>
-            <a href="login.html" aria-current="page">Login</a>
+            <a href="index.jsp">Home</a>
+            <a href="about.jsp">About Us</a>
+            <a href="index.jsp#accommodations">Accommodations</a>
+            <a href="attractions.jsp">Attractions</a>
+            <a href="login.jsp" aria-current="page">Login</a>
         </nav>
     </header>
 
@@ -73,16 +81,16 @@ int count = 0;
         </div>
         <div class="quick-links">
             <h3>Quick Links</h3>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="attractions.html">Attractions</a>
+            <a href="index.jsp">Home</a>
+            <a href="about.jsp">About Us</a>
+            <a href="contact.jsp">Contact Us</a>
+            <a href="attractions.jsp">Attractions</a>
         </div>
         <div class="social-media">
             <h3>Social Media</h3>
             <p>Social media links placeholder</p>
         </div>
-        <p>&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
+        <p class="copyright">&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
     </footer>
 
 </body>

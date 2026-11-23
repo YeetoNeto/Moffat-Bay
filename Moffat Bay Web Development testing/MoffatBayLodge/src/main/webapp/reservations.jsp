@@ -11,14 +11,14 @@
         <h1>Moffat Bay Lodge</h1>
 
          <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="index.html#accommodations">Accommodations</a>
-            <a href="attractions.html" >Attractions</a>
-            <a href="reservations.html" aria-current="page">My Reservations</a>
-            <a href="registration.html">Register</a>
-            <a href="login.html">Login</a>
+            <a href="index.jsp">Home</a>
+            <a href="about.jsp">About Us</a>
+            <a href="contact.jsp">Contact Us</a>
+            <a href="index.jsp#accommodations">Accommodations</a>
+            <a href="attractions.jsp" >Attractions</a>
+            <a href="reservations.jsp" aria-current="page">My Reservations</a>
+            <a href="registration.jsp">Register</a>
+            <a href="login.jsp">Login</a>
         </nav>
     </header>
     <main>
@@ -71,7 +71,7 @@
             <p>Social media links placeholder</p>
         </div>
 
-        <p>&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
+        <p class="copyright">&copy; 2026 Moffat Bay Lodge. All rights reserved.</p>
     </footer>
 
 </body>
